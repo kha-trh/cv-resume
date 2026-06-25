@@ -1,0 +1,21 @@
+% section_standalone.tex — Standalone wrapper for compiling a single section.
+% Used by scripts/compile_sections_pdf.sh — do not compile directly.
+%
+% Usage: latexmk -xelatex -jobname=<sectionname> section_standalone.tex
+%   e.g. latexmk -xelatex -jobname=experience section_standalone.tex
+%        → reads sections/experience.tex, writes experience.pdf
+%
+% \jobname expands to the -jobname value at compile time.
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{styles/resume}
+
+\begin{document}
+\pagestyle{empty}
+
+% Route to the correct section file via \jobname
+\edef\sectionfile{sections/\jobname}
+\input{\sectionfile}
+
+\end{document}

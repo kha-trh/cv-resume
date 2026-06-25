@@ -1,0 +1,10 @@
+compiler: xelatex
+theme: default
+output_pdf: main.pdf
+sections:
+  - header
+  - experience
+  - education
+  - skills
+  - projects
+  - certifications

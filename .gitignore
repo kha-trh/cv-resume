@@ -1,0 +1,24 @@
+# Generated files — do not commit
+output/
+latex/sections/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# LaTeX artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.xdv
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,102 @@
+% resume.sty — Custom LaTeX package for the resume/CV workspace.
+% Controls page geometry, fonts, colors, section headings, and helper macros.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{styles/resume}[2024/01/01 Resume Style]
+
+% ── Page geometry ──────────────────────────────────────────────────────────────
+\usepackage[
+  a4paper,
+  top=1.8cm, bottom=1.8cm,
+  left=1.8cm, right=1.8cm
+]{geometry}
+
+% ── Core packages ──────────────────────────────────────────────────────────────
+\usepackage{fontspec}       % XeLaTeX font selection
+\usepackage{xcolor}         % colors
+\usepackage{titlesec}       % section heading formatting
+\usepackage{enumitem}       % list customisation
+\usepackage{hyperref}       % clickable links
+\usepackage{parskip}        % paragraph spacing
+\usepackage{microtype}      % microtypography
+\usepackage{tabularx}       % flexible tables
+\usepackage{array}          % column spec extensions
+\usepackage{setspace}       % line spacing
+
+% ── Fonts ──────────────────────────────────────────────────────────────────────
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+% ── Colors ────────────────────────────────────────────────────────────────────
+\definecolor{accent}{HTML}{2563EB}   % blue
+\definecolor{muted}{HTML}{6B7280}    % gray
+\definecolor{dark}{HTML}{111827}     % near-black
+\definecolor{light}{HTML}{F9FAFB}    % off-white
+
+% ── Hyperlink style ────────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  hidelinks
+}
+
+% ── Global typography ──────────────────────────────────────────────────────────
+\color{dark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\pagestyle{empty}
+
+% ── Section headings ───────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{dark}}
+  {}
+  {0pt}
+  {}
+  [\vspace{-4pt}\textcolor{accent}{\rule{\linewidth}{1pt}}\vspace{2pt}]
+
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% ── List style ─────────────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt
+}
+
+% ── Helper macros ──────────────────────────────────────────────────────────────
+
+% \resumeheader{name}{title}{contact line 1}{contact line 2}
+\newcommand{\resumeheader}[4]{%
+  \begin{center}
+    {\Huge\bfseries #1}\\[4pt]
+    {\large\color{muted} #2}\\[4pt]
+    {\small #3}\\[2pt]
+    {\small #4}
+  \end{center}
+  \vspace{4pt}
+}
+
+% \resumeentry{title}{org/company}{location}{dates}{description}{bullets}
+\newcommand{\resumeentry}[6]{%
+  \vspace{4pt}
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} \textcolor{muted}{at} \textbf{#2} & \textcolor{muted}{\small #4} \\
+    \textcolor{muted}{\small #3} & \\
+  \end{tabularx}
+  \ifx&#5&\else
+    \vspace{1pt}{\small #5}\fi
+  \ifx&#6&\else
+    \begin{itemize}
+      #6
+    \end{itemize}
+  \fi
+}
+
+% \skillrow{category}{items}
+\newcommand{\skillrow}[2]{%
+  \noindent\textbf{#1:}\hspace{4pt}{\small #2}\\[2pt]
+}

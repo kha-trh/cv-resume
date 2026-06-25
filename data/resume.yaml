@@ -1,0 +1,77 @@
+# ⚠ IMPORTANT: Fill in your actual resume data below.
+# This file was reconstructed as a template after `git clean -fdx` was run.
+# The original content cannot be recovered — please re-enter your information.
+#
+# Every key here becomes a variable in web/templates/index.html.
+# The Python scripts in scripts/ read this file to generate both the PDF and HTML.
+
+personal:
+  name: Your Name
+  title: Your Job Title
+  email: you@example.com
+  phone: "+1 555-000-0000"
+  location: City, Country
+  website: https://yourwebsite.com
+  linkedin: linkedin.com/in/yourhandle
+  github: github.com/yourhandle
+  summary: >
+    A brief 2–3 sentence professional summary. Edit this to describe your
+    background, key skills, and what you're looking for.
+
+experience:
+  - company: Company Name
+    role: Job Title
+    location: City, Country
+    start: Jan 2022
+    end: Present
+    highlights:
+      - Accomplished X by doing Y, resulting in Z.
+      - Led a team of N engineers to deliver ...
+      - Reduced latency by X% through ...
+
+  - company: Previous Company
+    role: Previous Title
+    location: City, Country
+    start: Jun 2019
+    end: Dec 2021
+    highlights:
+      - Built feature X that increased revenue by Y%.
+      - Mentored N junior engineers.
+
+education:
+  - institution: University Name
+    degree: B.S.
+    field: Computer Science
+    location: City, Country
+    start: 2015
+    end: 2019
+    gpa: 3.8
+    highlights:
+      - Dean's List, 4 semesters.
+
+skills:
+  languages:   [Python, Go, TypeScript, Rust]
+  frameworks:  [FastAPI, React, Docker, Kubernetes]
+  databases:   [PostgreSQL, Redis, MongoDB]
+  tools:       [Git, Linux, CI/CD, Terraform]
+
+projects:
+  - name: Project Name
+    url: https://github.com/yourhandle/project
+    description: A short description of what this project does.
+    tech: [Python, Docker, PostgreSQL]
+    highlights:
+      - Implemented X feature using Y approach.
+      - Deployed to Z with 99.9% uptime.
+
+certifications:
+  - name: AWS Solutions Architect – Associate
+    issuer: Amazon Web Services
+    date: 2023
+    url: https://aws.amazon.com/certification/
+
+languages:
+  - language: English
+    proficiency: Native
+  - language: Vietnamese
+    proficiency: Native

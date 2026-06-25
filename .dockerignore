@@ -1,0 +1,18 @@
+# Exclude generated output and caches from Docker build context
+output/
+.cache/
+latex/sections/
+
+# Version control
+.git/
+.github/
+
+# Dev tools
+.devcontainer/
+.vscode/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
