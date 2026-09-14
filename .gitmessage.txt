@@ -1,0 +1,57 @@
+# <type>(<scope>): <short summary>
+# │       │         │
+# │       │         └─> Brief description of the change (max 72 chars)
+# │       └─> Optional: area of the codebase affected (e.g., auth, ui, api)
+# └─> Type of change (see list below)
+
+# --------------------
+# COMMIT TYPES:
+#
+# feat     → A new feature for the user or system.
+#            Example: feat(auth): add password reset functionality
+#
+# fix      → A bug fix that resolves an issue or incorrect behavior.
+#            Example: fix(ui): correct navbar alignment on mobile
+#
+# docs     → Documentation-only changes (README, comments, guides).
+#            Example: docs(readme): update installation instructions
+#
+# style    → Code style changes that do not affect functionality.
+#            (formatting, whitespace, missing semicolons, etc.)
+#            Example: style(css): reformat styles for consistency
+#
+# refactor → Code changes that neither fix a bug nor add a feature,
+#            but improve structure, readability, or maintainability.
+#            Example: refactor(api): simplify query building logic
+#
+# test     → Adding or updating tests without changing production code.
+#            Example: test(auth): add unit tests for token validation
+#
+# chore    → Routine tasks, maintenance, or tooling changes.
+#            (build process, dependency updates, CI config)
+#            Example: chore(deps): update lodash to v4.17.21
+#
+# perf     → Performance improvements without changing functionality.
+#            Example: perf(db): reduce query execution time by 30%
+#
+# build    → Changes to build system, package manager, or deployment.
+#            Example: build(ci): add Docker build step
+#
+# ci       → Changes to CI/CD configuration or scripts.
+#            Example: ci(github-actions): add test workflow
+#
+# --------------------
+# BODY (optional)
+# Explain the motivation for the change and any relevant context.
+# Include details that help reviewers understand the reasoning.
+# Wrap text at 72 characters.
+
+# FOOTER (optional)
+# - Reference related issues: Closes #123, Fixes #456
+# - Breaking changes: describe what changed and migration steps.
+
+# --------------------
+# EXAMPLES:
+# feat(auth): add JWT-based authentication
+# fix(ui): correct button alignment in mobile view
+# refactor(api): optimize database query performance
