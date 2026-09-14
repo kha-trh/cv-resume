@@ -84,12 +84,16 @@
   \vspace{4pt}
   \noindent
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
-    \textbf{#1} \textcolor{muted}{at} \textbf{#2} & \textcolor{muted}{\small #4} \\
-    \textcolor{muted}{\small #3} & \\
+    \textbf{#1} \textcolor{muted} & \textcolor{muted}{\small #4} \\
+    \ifx&#2&\else
+      {\textcolor{muted}{at} \textbf{#2}} & \textcolor{muted}{\small #3} \\
+    \fi
   \end{tabularx}
   \ifx&#5&\else
     \vspace{1pt}{\small #5}\fi
   \ifx&#6&\else
+    \textcolor{muted}{\small\textbf{Achievements:}}
+    \vspace{1pt}
     \begin{itemize}
       #6
     \end{itemize}
