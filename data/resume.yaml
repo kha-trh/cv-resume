@@ -1,7 +1,5 @@
-# ⚠ IMPORTANT: Fill in your actual resume data below.
-# This file was reconstructed as a template after `git clean -fdx` was run.
-# The original content cannot be recovered — please re-enter your information.
-#
+# File: resume.yaml
+# This file contains the data for your resume. You can edit this file to update your resume information.
 # Every key here becomes a variable in web/templates/index.html.
 # The Python scripts in scripts/ read this file to generate both the PDF and HTML.
 
@@ -9,11 +7,10 @@ personal:
   name: Tran Hoang Kha
   title: Embedded Software Engineer
   email: khath.hcmc@gmail.com
-  phone: "0785 682 994"
+  phone: "(+84) 785 682 994"
   location: Ho Chi Minh City, Vietnam
-  linkedin: linkedin.com/in/yourhandle
   summary: >
-    None
+    Need to update this summary with a brief overview of your professional background, key skills, and career objectives. This section should be concise and compelling, highlighting your unique value proposition as an Embedded Software Engineer.
 
 experience:
   - company: Bosch Global Software Technologies Company Limited (BGSV)
@@ -22,39 +19,73 @@ experience:
     start: Feb 2023
     end: Present
     achievements:
-      - Successfully developed and maintained embedded software for automotive applications, ensuring compliance with industry standards and regulations.
+      - None # TODO: Update with actual achievements
 
 education:
-  - institution: University Name
+  - institution: HCMC University of Technology and Engineering
     degree: B.S.
-    field: Computer Science
-    location: City, Country
+    field: Automation and Control Engineering
+    location: Ho Chi Minh City, Vietnam
     start: 2019
     end: 2023
-    gpa: 3.8
-    highlights:
-      - Dean's List, 4 semesters.
+    gpa: 3.0
 
 skills:
-  languages:   [Python, Go, TypeScript, Rust]
-  frameworks:  [FastAPI, React, Docker, Kubernetes]
-  databases:   [PostgreSQL, Redis, MongoDB]
-  tools:       [Git, Linux, CI/CD, Terraform]
+  languages:   [C, CAPL Script, Python, Matlab, Simulink, TypeScript, Shell Scripting, Bash Scripting]
+  frameworks:  [Docker, WSL, GitHub Actions, Jenkins]
+  standards:   [AUTOSAR Classic, FMI, Car Connectivity Consortium (CCC), ISO 26262, ISO 14229]
+  workflows:   [Agile, Scrum, Waterfall, V-Model]
+  tools:       [Git, GitHub, Bitbucket, Jira, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, MATLAB/Simulink, CMake, Ninja]
 
 projects:
-  - name: Project Name
-    url: https://github.com/yourhandle/project
+  - name: 6 DOF Painting Robot
+    area: [Robotics, embedded systems, control systems]
+    customer: [Graduate Project]
+    tech: [C, Matlab, Simulink, Matlab App Designer, Python]
     description: A short description of what this project does.
-    tech: [Python, Docker, PostgreSQL]
     responsibilities:
-      - Developed core features and maintained the codebase.
-      - Wrote unit and integration tests to ensure code quality.
+      - Designed and developed 6 DOF robot kinematics and dynamics.
+      - Developed image processing algorithm using Matlab.
+      - Visualize the robot's movement and simulate its operation using Matlab and Simulink.
+      - Developed converting method from image to robot's path.
+      - Developed control algorithms for the robot's movement.
+      - Developed a user-friendly interface using Matlab App Designer for controlling the robot and visualizing its operation.
+      - Developed a user-friendly interface using Python for converting
     highlights:
-      - Implemented X feature using Y approach.
-      - Deployed to Z with 99.9% uptime.
+      - TODO: Update with actual highlights
+    
+  - name: Automated HIL Testing Framework
+    area: [Tool development, CI/CT, embedded systems]
+    customer: [Bosch Fleet Management System]
+    tech: [C, CAPL Script, Python, Vector CANoe, Jenkins]
+    description: A short description of what this project does.
+    responsibilities:
+      - TODO: Update with actual responsibilities
+    highlights:
+      - TODO: Update with actual highlights
+
+  - name: Virtual ECU for AUTOSAR Classic standard
+    area: [Virtualization platform, embedded systems]
+    customer: [Honda, Iveco, Suzuki]
+    tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
+    description: A short description of what this project does.
+    responsibilities:
+      - TODO: Update with actual responsibilities
+    highlights:
+      - TODO: Update with actual highlights
+
+  - name: Virtual ECU for Non-AUTOSAR standard
+    area: [Virtualization platform, embedded systems]
+    customer: [Honda, UAES (China Virtualization Platform)]
+    tech: [C, Python, CMake, Ninja, GitHub Actions]
+    description: A short description of what this project does.
+    responsibilities:
+      - TODO: Update with actual responsibilities
+    highlights:
+      - TODO: Update with actual highlights
 
 certifications:
-  - name: AWS Solutions Architect – Associate
+  - name: AWS Solutions Architect - Associate
     issuer: Amazon Web Services
     date: 2023
     url: https://aws.amazon.com/certification/

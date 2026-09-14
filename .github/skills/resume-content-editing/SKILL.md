@@ -33,7 +33,7 @@ Each section has a known shape:
 - `name`, `title`, `email`, `phone`, `location`, `linkedin`, `summary`
 
 ### experience
-- list of objects with `company`, `role`, `location`, `start`, `end`, `highlights`
+- list of objects with `company`, `role`, `location`, `start`, `end`, `achievements`
 
 ### education
 - list of objects with `institution`, `degree`, `field`, `location`, `start`, `end`, `gpa`, `highlights`
@@ -42,7 +42,7 @@ Each section has a known shape:
 - mapping of skill categories to arrays, for example `languages`, `frameworks`, `databases`, `tools`
 
 ### projects
-- list of objects with `name`, `url`, `description`, `tech`, `role`, `highlights`
+- list of objects with `name`, `url`, `area`, `customer`, `description`, `tech`, `responsibilities`, `highlights`
 
 ### certifications
 - list of objects with `name`, `issuer`, `date`, `url`

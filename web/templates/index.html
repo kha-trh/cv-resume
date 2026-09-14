@@ -39,9 +39,9 @@
     </div>
     {% if job.location %}<p class="entry-location">{{ job.location }}</p>{% endif %}
     {% if job.description %}<p>{{ job.description }}</p>{% endif %}
-    {% if job.highlights %}
+    {% if job.achievements %}
     <ul>
-      {% for item in job.highlights %}<li>{{ item }}</li>{% endfor %}
+      {% for item in job.achievements %}<li>{{ item }}</li>{% endfor %}
     </ul>
     {% endif %}
   </div>
@@ -103,13 +103,27 @@
         {% else %}{{ proj.name }}{% endif %}
       </span>
     </div>
+    {% if proj.area or proj.customer %}
+    <p class="entry-muted">
+      {% if proj.area %}<span>Area: {{ proj.area if proj.area is string else proj.area | join(', ') }}</span>{% endif %}
+      {% if proj.area and proj.customer %}<span class="sep">|</span>{% endif %}
+      {% if proj.customer %}<span>Customer: {{ proj.customer if proj.customer is string else proj.customer | join(', ') }}</span>{% endif %}
+    </p>
+    {% endif %}
     {% if proj.description %}<p>{{ proj.description }}</p>{% endif %}
     {% if proj.tech %}
     <p class="tech-stack">
       {% for t in proj.tech %}<span class="tag">{{ t }}</span>{% endfor %}
     </p>
     {% endif %}
+    {% if proj.responsibilities %}
+    <p class="entry-muted"><em>Responsibilities:</em></p>
+    <ul>
+      {% for item in proj.responsibilities %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+    {% endif %}
     {% if proj.highlights %}
+    <p class="entry-muted"><em>Highlights:</em></p>
     <ul>
       {% for item in proj.highlights %}<li>{{ item }}</li>{% endfor %}
     </ul>

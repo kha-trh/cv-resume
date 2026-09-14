@@ -280,7 +280,7 @@ website comes from this file. Edit this; run `./build_all.sh`; done.
 | Key | Description |
 |---|---|
 | `personal` | Name, title, email, phone, location, website, LinkedIn, GitHub, summary |
-| `experience` | List of jobs — company, role, location, start/end dates, highlights |
+| `experience` | List of jobs — company, role, location, start/end dates, achievements |
 | `education` | List of degrees — institution, degree, field, dates, GPA, highlights |
 | `skills` | Map of category → list of items (`languages: [Python, Go]`) |
 | `projects` | List of projects — name, URL, description, tech stack, highlights |
@@ -307,7 +307,7 @@ experience:
     location: Remote
     start: Jan 2022
     end: Present
-    highlights:
+    achievements:
       - Led migration from monolith to microservices, reducing deploy time by 60%.
 
 skills:

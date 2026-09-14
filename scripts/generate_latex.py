@@ -125,17 +125,48 @@ def gen_projects(data):
         return ''
     lines = [r'\section{Projects}']
     for proj in projects:
+        # Get header fields: name and url (optionally)
         name    = esc(proj.get('name', ''))
         url     = proj.get('url', '')
         if url:
             name = r'\href{' + url + r'}{' + name + r'}'
+        
+        # Get area, customer, and tech fields, handling both lists and single values
+        area    = proj.get('area', [])
+        area_str = ', '.join(esc(str(a)) for a in area) if isinstance(area, list) else esc(str(area))
+        customer = proj.get('customer', [])
+        customer_str = ', '.join(esc(str(c)) for c in customer) if isinstance(customer, list) else esc(str(customer))
+        tech = proj.get('tech', [])
+        tech_str = ', '.join(esc(str(t)) for t in tech) if isinstance(tech, list) else esc(str(tech))
+
+        # Get description
         desc    = esc(proj.get('description', ''))
-        tech    = proj.get('tech', [])
-        tech_str = r'\textit{' + esc(', '.join(str(t) for t in tech)) + r'}' if tech else ''
-        combined = ' --- '.join(x for x in [desc, tech_str] if x)
-        bullets  = proj.get('highlights', [])
-        bullet_tex = '\n'.join(r'  \item ' + esc(b) for b in bullets)
-        lines.append(r'\resumeentry{' + name + r'}{}{}{}{' + combined + r'}{' + bullet_tex + r'}')
+
+        # Merging area, customer, tech, and description into a single string for the LaTeX entry
+        meta = []
+        if area:
+            meta.append(f'Area: {area_str}')
+        if customer:
+            meta.append(f'Customer: {customer_str}')
+        if tech:
+            meta.append(f'Technologies: {tech_str}')
+        if desc:
+            meta.append(f'Description: {desc}')
+        combined = r' \\ '.join(meta)
+
+        responsibilities = proj.get('responsibilities', [])
+        highlights = proj.get('highlights', [])
+
+        bullets_resp = (responsibilities if isinstance(responsibilities, list) else [])
+        bullets_high = (highlights if isinstance(highlights, list) else [])
+
+        bullet_items = []
+        if bullets_resp:
+            bullet_items.append(r'\item \textit{Responsibilities:}' + '\n' + r'  \begin{itemize}' + '\n' + '\n'.join(r'    \item ' + esc(b) for b in bullets_resp) + '\n' + r'  \end{itemize}')
+        if bullets_high:
+            bullet_items.append(r'\item \textit{Highlights:}' + '\n' + r'  \begin{itemize}' + '\n' + '\n'.join(r'    \item ' + esc(b) for b in bullets_high) + '\n' + r'  \end{itemize}')
+
+        lines.append(r'\resumeentry{' + name + r'}{}{}{}{' + combined + r'}{' + '\n'.join(bullet_items) + r'}')
     return '\n'.join(lines)
 
 
@@ -155,6 +186,18 @@ def gen_certifications(data):
     return '\n'.join(lines)
 
 
+def gen_languages(data):
+    langs = data.get('languages', [])
+    if not langs:
+        return ''
+    lines = [r'\section{Languages}']
+    for lang in langs:
+        l = esc(lang.get('language', ''))
+        p = esc(lang.get('proficiency', ''))
+        lines.append(r'\skillrow{' + l + r'}{' + p + r'}')
+    return '\n'.join(lines)
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 GENERATORS = {
@@ -164,6 +207,7 @@ GENERATORS = {
     'skills':         gen_skills,
     'projects':       gen_projects,
     'certifications': gen_certifications,
+    'languages':      gen_languages,
 }
 
 def main():
