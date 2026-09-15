@@ -57,9 +57,9 @@ projects:
     area: [Robotics, embedded systems, control systems]
     customer: [Graduate Project]
     tech: [C, Matlab, Simulink, Python]
-    description: A short description of what this project does.
+    description: 4-Month project focusing on developing a biomimetic quadruped robot capable of autonomous locomotion using kinematic modeling, dynamic analysis, trajectory planning, and PID-based motion control.
     responsibilities:
-      - Designed and developed quadruped robot kinematics and dynamics.
+      - Designed and developed quadruped robot forward and inverse kinematics for quadruped locomotion.
       - Developed control algorithms for the robot's movement.
       - Developed algorithms for the robot's path planning and obstacle avoidance.
       - Visualized the robot's movement and simulated its operation using Matlab and Simulink.
@@ -72,16 +72,16 @@ projects:
     area: [Robotics, embedded systems, control systems]
     customer: [Graduate Project]
     tech: [C, Matlab, Simulink, Matlab App Designer, Python]
-    description: A short description of what this project does.
+    description: 6-Month graduate project focusing on developing a 6-DOF robotic painting system capable of converting image data into robotic motion trajectories for automated drawing and painting applications.
     responsibilities:
-      - Designed and developed 6 DOF robot kinematics and dynamics.
+      - Designed and developed 6 DOF robot forward and inverse kinematics.
       - Developed image processing algorithm using Matlab.
-      - Visualize the robot's movement and simulate its operation using Matlab and Simulink.
+      - Visualized the robot's movement and simulated its operation using Matlab and Simulink.
       - Developed converting method from image to robot's path.
       - Developed control algorithms for the robot's movement.
       - Designed and developed control method for the robot's movement using PID controller and trajectory planning.
       - Developed a user-friendly interface using Matlab App Designer for controlling the robot and visualizing its operation.
-      - Developed a user-friendly interface using Python for converting
+      - Developed a user-friendly interface using Python for converting image data into robotic motion trajectories.
     highlights:
       - First invention of 6 DOF Painting Robot.
       - Most highly graded graduate project in the graduation committee with a score of 9.3/10.
@@ -90,21 +90,39 @@ projects:
     area: [Tool development, CI/CT, embedded systems]
     customer: [Bosch Fleet Management System]
     tech: [C, CAPL Script, Python, Vector CANoe, Jenkins]
-    description: A short description of what this project does.
+    description: Developed an end-to-end Hardware-in-the-Loop (HIL) test automation framework enabling continuous integration, automated test execution, and reporting across embedded, mobile application, and web validation environments.
     responsibilities:
-      - TODO: Update with actual responsibilities
+      - Developed automation tools for HIL testing.
+      - Designed and implemented automated pipeline from flashing, test execution in CANoe to Phone controlled test and website automation testing.
+      - Maintained Jenkins pipelines for continuous integration and continuous testing with nightly and weekly test execution.
+      - Developed and maintained test scripts for HIL testing using CAPL Script and Python.
     highlights:
-      - TODO: Update with actual highlights
+      - Increased test coverage and reduced manual testing effort by more than 80% through automation.
+      - Reduced test execution time approximately by 50% by implementing parallel test execution and optimizing test scripts.
 
   - name: Virtual ECU Development and Testing Platform
     area: [Virtualization platform, embedded systems]
     customer: [Honda, Iveco, Suzuki, UAES (China Virtualization Platform)]
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
-    description: A short description of what this project does.
+    description: Designed and developed a scalable Virtual ECU (vECU) platform supporting AUTOSAR Classic and non-AUTOSAR software components across multiple virtualization toolchains. The platform enables model verification, software integration, continuous testing, and rapid validation for automotive ECU development.
     responsibilities:
-      - TODO: Update with actual responsibilities
+      - Designed concept and software architecture for Virtual ECU platform to adapt AUTOSAR Classic and non-AUTOSAR software components.
+      - Designed and developed method for handling single core and multi-core Virtual ECU using MICROSAR OS or other real-time OS.
+      - Implemented Virtual ECU platform to adapt AUTOSAR Classic and non-AUTOSAR software components.
+      - Designed and developed Virtual ECU platform to adapt with multiple toolchains including ETAS COSYM, ETAS vECU-Builder, and Vector Virtual Target.
+      - Implemented virtual communication method for multiple Virtual ECUs (Virtual ECU type 1 and type 2).
+      - Designed and implemented Virtual ECU build process and automation pipeline using CMake and Ninja.
+      - Implemented testing framework for Virtual ECU.
+      - Designed and implemented cross-platform build and deployment environment for Virtual ECU using Docker.
+      - Developed Virtual ECU type 3 with CAN communication using Vector tools and ETAS tools.
+      - Designed and implemented testing method to verify Matlab/Simulink models generated code on Virtual ECU platform.
     highlights:
-      - TODO: Update with actual highlights
+      - Developed a flexible and reusable Virtual ECU platform supporting multiple toolchains.
+      - Improved testing efficiency and reduced setup time for Virtual ECU development.
+      - First successful Virtual ECU applied for testing in Honda project in XC-CE domain.
+      - Concept and software architecture of Virtual ECU platform has been agreed and applied in multiple projects.
+      - Awarded Iveco, Suzuki and UAES (China Virtualization Platform) projects for extending scope of work for XC-CE Viet Nam team in Virtual ECU development topic.
+      - Joined global toolchain solution team to improve and standardize Virtual ECU platform for global usage in XC-CE domain.
 
   - name: Software-in-the-Loop (SiL) Testing
     area: [Virtualization platform, embedded systems]
@@ -112,15 +130,27 @@ projects:
     tech: [C, Python, Matlab, Simulink, ETAS COSYM, ETAS vECU-Builder, CMake, Jenkins, GitHub Actions]
     description: A short description of what this project does.
     responsibilities:
-      - TODO: Update with actual responsibilities
+      - Reviewed and analyzed Honda project requirements for Software-in-the-Loop (SiL) testing.
+      - Designed Integration testcases and Qualification testcases for Virtual ECU
+      - Implemented and executed Integration and Qualification test script for Virtual ECU using Python, ETAS tools and Vector tools.
+      - Designed and implemented AI-based test script generation method.
+      - Joined onsite testing in Honda headquarters in Japan for Vehicle testing and verification.
+      - Joined onsite testing in Alpsalpine headquarters in Japan for Debug testing and verification.
+      - Remote contributed to Customer support and issue resolution.
     highlights:
-      - TODO: Update with actual highlights
+      - ASPICE level 2 achieved for testing level SWE5 (Integration testing) and SWE6 (Qualification testing) for Honda project.
+      - Successfully completed onsite testing in Honda headquarters in Japan for Vehicle testing and verification.
+      - Successfully completed onsite testing in Alpsalpine headquarters in Japan for Debug testing and verification.
+      - Reduced test execution time approximately by more than 70% by implementing test execution automation and test scripts generation.
+      - Applied AI-based test script generation method to reduce manual effort in test script creation.
+      - Successfully resolved customer issues and provided support remotely, ensuring timely resolution of any problems encountered during testing.
+      - Reduced license cost for customer by implementing Virtual ECU inhouse platform.
 
 certifications:
-  - name: AWS Solutions Architect - Associate
-    issuer: Amazon Web Services
-    date: 2023
-    url: https://aws.amazon.com/certification/
+  - name: None
+    issuer: None
+    date: None
+    url: None
 
 languages:
   - language: English
