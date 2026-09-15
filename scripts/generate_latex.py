@@ -234,16 +234,26 @@ GENERATORS = {
 
 def main():
     yaml_path = 'data/resume.yaml'
+    config_path = 'config/build.yaml'
     out_dir   = 'latex/sections'
 
     print(f'Loading {yaml_path} ...')
     with open(yaml_path, encoding='utf-8') as f:
-        data = yaml.safe_load(f)
+        data = yaml.safe_load(f) or {}
+
+    active_sections = None
+    if os.path.exists(config_path):
+        with open(config_path, encoding='utf-8') as f:
+            config = yaml.safe_load(f) or {}
+            active_sections = config.get('sections')
 
     os.makedirs(out_dir, exist_ok=True)
 
     for section, generator in GENERATORS.items():
-        content = generator(data)
+        if active_sections is not None and section not in active_sections:
+            content = ''
+        else:
+            content = generator(data)
         out_path = os.path.join(out_dir, f'{section}.tex')
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(content + '\n')

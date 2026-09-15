@@ -30,13 +30,22 @@ from jinja2 import Environment, FileSystemLoader
 
 def main():
     yaml_path    = 'data/resume.yaml'
+    config_path  = 'config/build.yaml'
     template_dir = 'web/templates'
     static_src   = 'web/static'
     out_dir      = 'output/html'
     static_dst   = os.path.join(out_dir, 'static')
 
     with open(yaml_path, encoding='utf-8') as f:
-        data = yaml.safe_load(f)
+        data = yaml.safe_load(f) or {}
+
+    active_sections = None
+    if os.path.exists(config_path):
+        with open(config_path, encoding='utf-8') as f:
+            config = yaml.safe_load(f) or {}
+            active_sections = config.get('sections')
+
+    data['active_sections'] = active_sections
 
     env = Environment(
         loader=FileSystemLoader(template_dir),

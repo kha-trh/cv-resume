@@ -24,7 +24,7 @@ personal:
   phone: "(+84) 785 682 994"
   location: Ho Chi Minh City, Vietnam
   summary: >
-    Need to update this summary with a brief overview of your professional background, key skills, and career objectives. This section should be concise and compelling, highlighting your unique value proposition as an Embedded Software Engineer.
+    Automotive Embedded Software Engineer with 3+ years of experience in Virtual ECU development, Software-in-the-Loop (SiL) testing, embedded software validation, and test automation within the automotive domain. Specialized in designing and implementing virtualization platforms for AUTOSAR Classic and non-AUTOSAR applications using ETAS and Vector toolchains. Proven track record of delivering reusable Virtual ECU solutions, CI/CT pipelines, and automated testing frameworks for global automotive projects including Honda, Iveco, Suzuki, and UAES. Strong expertise in C, Python, MATLAB/Simulink, software architecture, and model-based development, with experience collaborating directly with international customers and global engineering teams.
 
 experience:
   - company: Bosch Global Software Technologies Company Limited (BGSV)
@@ -107,7 +107,7 @@ projects:
     description: Designed and developed a scalable Virtual ECU (vECU) platform supporting AUTOSAR Classic and non-AUTOSAR software components across multiple virtualization toolchains. The platform enables model verification, software integration, continuous testing, and rapid validation for automotive ECU development.
     responsibilities:
       - Designed concept and software architecture for Virtual ECU platform to adapt AUTOSAR Classic and non-AUTOSAR software components.
-      - Designed and developed method for handling single core and multi-core Virtual ECU using MICROSAR OS or other real-time OS.
+      - Designed and developed method for handling single core and multi-core Virtual ECU.
       - Implemented Virtual ECU platform to adapt AUTOSAR Classic and non-AUTOSAR software components.
       - Designed and developed Virtual ECU platform to adapt with multiple toolchains including ETAS COSYM, ETAS vECU-Builder, and Vector Virtual Target.
       - Implemented virtual communication method for multiple Virtual ECUs (Virtual ECU type 1 and type 2).

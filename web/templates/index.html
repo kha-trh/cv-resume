@@ -27,6 +27,7 @@ Where It Is Used:
 </head>
 <body>
 
+{% if (not active_sections or 'header' in active_sections) and personal %}
 <header class="resume-header">
   <h1>{{ personal.name }}</h1>
   <p class="title">{{ personal.title }}</p>
@@ -44,8 +45,9 @@ Where It Is Used:
   <p class="summary">{{ personal.summary }}</p>
   {% endif %}
 </header>
+{% endif %}
 
-{% if experience %}
+{% if (not active_sections or 'experience' in active_sections) and experience %}
 <section>
   <h2>Experience</h2>
   {% for job in experience %}
@@ -69,7 +71,7 @@ Where It Is Used:
 </section>
 {% endif %}
 
-{% if education %}
+{% if (not active_sections or 'education' in active_sections) and education %}
 <section>
   <h2>Education</h2>
   {% for edu in education %}
@@ -92,7 +94,7 @@ Where It Is Used:
 </section>
 {% endif %}
 
-{% if skills %}
+{% if (not active_sections or 'skills' in active_sections) and skills %}
 <section>
   <h2>Skills</h2>
   <div class="skills-grid">
@@ -112,7 +114,7 @@ Where It Is Used:
 </section>
 {% endif %}
 
-{% if projects %}
+{% if (not active_sections or 'projects' in active_sections) and projects %}
 <section>
   <h2>Projects</h2>
   {% for proj in projects %}
@@ -153,7 +155,7 @@ Where It Is Used:
 </section>
 {% endif %}
 
-{% if certifications %}
+{% if (not active_sections or 'certifications' in active_sections) and certifications %}
 <section>
   <h2>Certifications</h2>
   {% for cert in certifications %}
@@ -171,7 +173,7 @@ Where It Is Used:
 </section>
 {% endif %}
 
-{% if languages %}
+{% if (not active_sections or 'languages' in active_sections) and languages %}
 <section>
   <h2>Languages</h2>
   <div class="skills-grid">
