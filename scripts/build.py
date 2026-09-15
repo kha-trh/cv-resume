@@ -1,6 +1,26 @@
 #!/usr/bin/env python3
-"""build.py — Optional CLI wrapper. Calls generate_latex.py, generate_html.py,
-and xelatex in sequence. Useful for running inside the container directly."""
+"""
+File Name: scripts/build.py
+
+Description:
+    Optional standalone Python CLI build wrapper. Sequentially coordinates LaTeX
+    section generation (generate_latex.py), HTML site rendering (generate_html.py),
+    and master PDF compilation (latexmk -xelatex) for development environments.
+
+How to Use:
+    Run inside the container or a properly configured local Python+LaTeX environment:
+        python3 scripts/build.py           # Build all targets (LaTeX + HTML + PDF)
+        python3 scripts/build.py --tex     # Generate LaTeX section files only
+        python3 scripts/build.py --html    # Generate HTML website only
+        python3 scripts/build.py --pdf     # Compile XeLaTeX master PDF
+    Prerequisites:
+        - Python 3.x with pyyaml and jinja2
+        - XeLaTeX and latexmk (for --pdf or full builds)
+
+Where It Is Used:
+    - Used as a direct CLI build entry point inside Docker or dev containers.
+    - Interacts with scripts/generate_latex.py, scripts/generate_html.py, and latex/main.tex.
+"""
 
 import argparse
 import subprocess

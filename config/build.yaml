@@ -1,3 +1,19 @@
+# ==============================================================================
+# File Name: config/build.yaml
+#
+# Description:
+#   Build configuration settings defining compiler choices, default theme,
+#   output PDF filename, and active document section inclusion list.
+#
+# How to Use:
+#   Edit compiler or output settings. Comment out or uncomment items under 'sections'
+#   to toggle section inclusion in build pipelines.
+#
+# Where It Is Used:
+#   - Hashed and read by build_all.sh for cache invalidation (.cache/data.sha256).
+#   - Governs section visibility and compiler configuration across build pipelines.
+# ==============================================================================
+
 compiler: xelatex
 theme: default
 output_pdf: main.pdf

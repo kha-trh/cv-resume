@@ -1,10 +1,24 @@
 #!/usr/bin/env bash
-# compile_sections_pdf.sh
-# Compiles every latex/sections/*.tex as a standalone PDF into output/pdf/sections/.
-# Called by build_all.sh inside the Docker container (or Dev Container).
+# ==============================================================================
+# File Name: scripts/compile_sections_pdf.sh
 #
-# Usage: bash scripts/compile_sections_pdf.sh [cache_latex_dir]
-#   cache_latex_dir defaults to .cache/latex
+# Description:
+#   Compiles each generated LaTeX section file in latex/sections/*.tex as an
+#   independent, standalone PDF into output/pdf/sections/<name>.pdf using
+#   latexmk and latex/section_standalone.tex.
+#
+# How to Use:
+#   Invoked automatically by build_all.sh during the PDF compilation stage, or
+#   executed directly:
+#       bash scripts/compile_sections_pdf.sh [cache_latex_dir]
+#   Prerequisites:
+#       - XeLaTeX and latexmk available in PATH (or run inside Docker)
+#       - Populated latex/sections/*.tex files
+#
+# Where It Is Used:
+#   - Called by build_all.sh to build individual section PDFs.
+#   - Generates output/pdf/sections/*.pdf from latex/sections/*.tex.
+# ==============================================================================
 
 set -euo pipefail
 

@@ -1,7 +1,21 @@
-# File: resume.yaml
-# This file contains the data for your resume. You can edit this file to update your resume information.
-# Every key here becomes a variable in web/templates/index.html.
-# The Python scripts in scripts/ read this file to generate both the PDF and HTML.
+# ==============================================================================
+# File Name: data/resume.yaml
+#
+# Description:
+#   Single source of truth containing all structured resume and CV content,
+#   including personal contact info, summary, experience, education, skills,
+#   projects, certifications, and languages.
+#
+# How to Use:
+#   Edit this file directly whenever resume information changes. Preserve valid
+#   YAML formatting and quote strings containing special characters. Run ./build_all.sh
+#   after editing to rebuild both the PDF and HTML outputs.
+#
+# Where It Is Used:
+#   - Read by scripts/generate_latex.py to generate latex/sections/*.tex.
+#   - Read by scripts/generate_html.py to render output/html/index.html.
+#   - Tracked by build_all.sh for change detection (.cache/data.sha256).
+# ==============================================================================
 
 personal:
   name: Tran Hoang Kha
@@ -66,18 +80,8 @@ projects:
 
   - name: Virtual ECU for AUTOSAR Classic standard
     area: [Virtualization platform, embedded systems]
-    customer: [Honda, Iveco, Suzuki]
+    customer: [Honda, Iveco, Suzuki, UAES (China Virtualization Platform)]
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
-    description: A short description of what this project does.
-    responsibilities:
-      - TODO: Update with actual responsibilities
-    highlights:
-      - TODO: Update with actual highlights
-
-  - name: Virtual ECU for Non-AUTOSAR standard
-    area: [Virtualization platform, embedded systems]
-    customer: [Honda, UAES (China Virtualization Platform)]
-    tech: [C, Python, CMake, Ninja, GitHub Actions]
     description: A short description of what this project does.
     responsibilities:
       - TODO: Update with actual responsibilities

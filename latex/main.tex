@@ -1,6 +1,21 @@
+% ==============================================================================
+% File Name: latex/main.tex
+%
+% Description:
+%   Master XeLaTeX document template for compiling the full resume PDF. Loads
+%   global typography, styling macros, and geometries from styles/resume.sty, and
+%   sequentially inputs modular generated section files from latex/sections/.
+%
+% How to Use:
+%   Compiled by latexmk or xelatex:
+%       latexmk -xelatex -output-directory=.cache/latex latex/main.tex
+%   To adjust section ordering in the compiled master PDF, reorder the \input{} lines.
+%
+% Where It Is Used:
+%   - Compiled by build_all.sh and scripts/build.py to generate output/pdf/main.pdf.
+%   - Relies on styles/resume.sty and generated files in latex/sections/*.tex.
+% ==============================================================================
 % !TEX program = xelatex
-% main.tex — XeLaTeX entry point. To reorder sections in the PDF,
-% reorder the \input lines below.
 
 \documentclass[11pt, a4paper]{article}
 

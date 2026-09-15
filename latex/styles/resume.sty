@@ -1,5 +1,20 @@
-% resume.sty — Custom LaTeX package for the resume/CV workspace.
-% Controls page geometry, fonts, colors, section headings, and helper macros.
+% ==============================================================================
+% File Name: latex/styles/resume.sty
+%
+% Description:
+%   Custom LaTeX package defining global layout, A4 page margins, typography
+%   (Latin Modern fonts via fontspec), color palettes (accent, muted, dark),
+%   section heading rules, and core formatting macros (\resumeheader, \resumeentry, \skillrow).
+%
+% How to Use:
+%   Include in any XeLaTeX document via:
+%       \usepackage{styles/resume}
+%   Provides formatting macros used inside generated section files.
+%
+% Where It Is Used:
+%   - Included by latex/main.tex and latex/section_standalone.tex.
+%   - Applied across all generated section files in latex/sections/*.tex.
+% ==============================================================================
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{styles/resume}[2024/01/01 Resume Style]

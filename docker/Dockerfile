@@ -1,3 +1,20 @@
+# ==============================================================================
+# File Name: docker/Dockerfile
+#
+# Description:
+#   Multi-stage Dockerfile defining the isolated build environment for compiling
+#   both PDF (XeLaTeX, latexmk, Latin Modern fonts) and HTML (Python 3.12, PyYAML, Jinja2)
+#   outputs without requiring host dependencies.
+#
+# How to Use:
+#   Built automatically by build_all.sh on first run, or built manually:
+#       docker build -f docker/Dockerfile -t resume-builder .
+#
+# Where It Is Used:
+#   - Built and run by build_all.sh to execute build pipelines in a containerized environment.
+#   - Tracked via .cache/image.sha256 for build caching.
+# ==============================================================================
+
 # Stage 1: install Python deps in isolation
 FROM python:3.12-slim AS python-deps
 

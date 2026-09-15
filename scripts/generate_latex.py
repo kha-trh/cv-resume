@@ -1,5 +1,27 @@
 #!/usr/bin/env python3
-"""generate_latex.py — Converts data/resume.yaml into latex/sections/*.tex files."""
+"""
+File Name: scripts/generate_latex.py
+
+Description:
+    Converts structured resume data from data/resume.yaml into modular LaTeX section
+    files (*.tex) in latex/sections/. Handles character escaping and data mapping
+    for personal details, experience, education, skills, projects, certifications,
+    and languages.
+
+How to Use:
+    Execute directly via Python or through build orchestration:
+        python3 scripts/generate_latex.py
+        ./build_all.sh --tex
+    Prerequisites:
+        - Python 3.x
+        - PyYAML package (pip install pyyaml)
+        - Valid data/resume.yaml source file
+
+Where It Is Used:
+    - Called by build_all.sh during TeX and PDF generation stages.
+    - Called by scripts/build.py during direct CLI builds.
+    - Generates LaTeX files under latex/sections/*.tex compiled by latexmk into output/pdf/.
+"""
 
 import os
 import sys

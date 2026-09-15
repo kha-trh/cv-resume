@@ -1,4 +1,21 @@
-/* style.css — Responsive resume stylesheet */
+/*
+================================================================================
+File Name: web/static/css/style.css
+
+Description:
+  Responsive resume stylesheet with CSS custom properties, responsive layout,
+  typography rules, entry cards, skill tag chips, and @media print formatting
+  for browser-based PDF printing.
+
+How to Use:
+  Linked directly in web/templates/index.html. Edit to adjust website colors,
+  spacing, typography, or print stylesheets.
+
+Where It Is Used:
+  - Linked in web/templates/index.html.
+  - Copied by scripts/generate_html.py from web/static/ to output/html/static/.
+================================================================================
+*/
 :root {
   --accent:     #2563EB;
   --muted:      #6B7280;

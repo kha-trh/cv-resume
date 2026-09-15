@@ -1,6 +1,26 @@
 #!/usr/bin/env python3
-"""generate_html.py — Renders web/templates/index.html with data/resume.yaml and
-copies web/static/ alongside the result into output/html/."""
+"""
+File Name: scripts/generate_html.py
+
+Description:
+    Renders the Jinja2 template at web/templates/index.html using content from
+    data/resume.yaml and writes the resulting static resume website to output/html/index.html.
+    Also synchronizes static assets (CSS, JS, images) from web/static/ to output/html/static/.
+
+How to Use:
+    Execute directly via Python or through build orchestration:
+        python3 scripts/generate_html.py
+        ./build_all.sh --html
+    Prerequisites:
+        - Python 3.x
+        - PyYAML and Jinja2 packages (pip install pyyaml jinja2)
+        - Valid data/resume.yaml source file and web/templates/index.html template
+
+Where It Is Used:
+    - Called by build_all.sh during the HTML website generation stage.
+    - Called by scripts/build.py during direct CLI builds.
+    - Populates the output/html/ web bundle for browser viewing and static hosting.
+"""
 
 import os
 import shutil

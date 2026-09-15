@@ -1,11 +1,20 @@
-% section_standalone.tex — Standalone wrapper for compiling a single section.
-% Used by scripts/compile_sections_pdf.sh — do not compile directly.
+% ==============================================================================
+% File Name: latex/section_standalone.tex
 %
-% Usage: latexmk -xelatex -jobname=<sectionname> section_standalone.tex
-%   e.g. latexmk -xelatex -jobname=experience section_standalone.tex
-%        → reads sections/experience.tex, writes experience.pdf
+% Description:
+%   Minimal standalone XeLaTeX wrapper template for compiling an individual section
+%   into a single-page PDF. Dynamically loads the target section using the TeX
+%   \jobname macro (\input{sections/\jobname}).
 %
-% \jobname expands to the -jobname value at compile time.
+% How to Use:
+%   Compiled programmatically with latexmk and a specified jobname:
+%       latexmk -xelatex -jobname=<section_name> latex/section_standalone.tex
+%   (e.g., latexmk -jobname=experience → compiles sections/experience.tex to experience.pdf).
+%
+% Where It Is Used:
+%   - Consumed by scripts/compile_sections_pdf.sh to generate individual PDFs
+%     in output/pdf/sections/<section_name>.pdf.
+% ==============================================================================
 
 \documentclass[11pt, a4paper]{article}
 

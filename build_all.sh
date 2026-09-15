@@ -1,6 +1,27 @@
 #!/usr/bin/env bash
-# build_all.sh — Single entry point for all resume build operations.
-# Usage: ./build_all.sh [--tex] [--html] [--pdf] [--all] [--clean] [--force]
+# ==============================================================================
+# File Name: build_all.sh
+#
+# Description:
+#   Primary build orchestration script and single entry point for all resume
+#   build and cleanup operations. Manages Docker image caching/building,
+#   dependency hash checks, target execution (--tex, --html, --pdf), and output cleanup.
+#
+# How to Use:
+#   Run from the repository root on the host machine or in a Dev Container:
+#       ./build_all.sh           # Default: generate *.tex + HTML + master & section PDFs
+#       ./build_all.sh --tex     # Generate LaTeX section files only
+#       ./build_all.sh --html    # Render static HTML website only
+#       ./build_all.sh --pdf     # Compile master PDF and section PDFs only
+#       ./build_all.sh --clean   # Remove build outputs and compilation caches
+#       ./build_all.sh --force   # Bypass caches and force rebuild of all stages
+#       ./build_all.sh --clean --force  # Full reset including font cache
+#
+# Where It Is Used:
+#   - Primary entry point for developers and CI/CD pipelines to build resume outputs.
+#   - Coordinates docker/Dockerfile, scripts/generate_latex.py, scripts/generate_html.py,
+#     and scripts/compile_sections_pdf.sh to populate output/pdf/ and output/html/.
+# ==============================================================================
 set -euo pipefail
 
 # ── Constants ──────────────────────────────────────────────────────────────────
