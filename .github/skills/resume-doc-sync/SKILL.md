@@ -23,7 +23,7 @@ Ensure semantic, informational, and structural consistency between the compiled 
 ### 2. Audit Output Parity & Identify Discrepancies
 Compare PDF generator logic and HTML template logic across each section:
 - **Header / Personal Info**: Name, title, contact details (email, phone, location), links (LinkedIn, GitHub, Website), summary statement.
-- **Experience**: Role, company, location, dates, description, achievements / highlights.
+- **Experience**: Role, company, location, dates, description, roles.
 - **Education**: Degree, field of study, institution, location, dates, GPA, highlights.
 - **Skills**: Categories, items/lists formatting, grouping tags.
 - **Projects**: Name, URL, area, customer, tech stack, description, responsibilities, highlights.

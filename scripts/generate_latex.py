@@ -97,8 +97,8 @@ def gen_experience(data):
         end      = esc(job.get('end', ''))
         dates    = f'{start} -- {end}' if start or end else ''
         desc     = esc(job.get('description', ''))
-        bullets  = job.get('achievements', [])
-        bullet_tex = '\n'.join(r'  \item ' + esc(b) for b in bullets)
+        bullets  = job.get('roles', [])
+        bullet_tex = r'\item \textit{Roles:}' + '\n' + r'  \begin{itemize}' + '\n' + '\n'.join(r'    \item ' + esc(b) for b in bullets) + '\n' + r'  \end{itemize}'
         lines.append(r'\resumeentry{' + title + r'}{' + company + r'}{' +
                      location + r'}{' + dates + r'}{' + desc + r'}{' + bullet_tex + r'}')
     return '\n'.join(lines)

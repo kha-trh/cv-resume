@@ -4,7 +4,7 @@ File Name: web/templates/index.html
 
 Description:
   Primary Jinja2 HTML layout template for rendering the responsive resume website.
-  Structures personal header, contact links, summary statement, experience achievements,
+  Structures personal header, contact links, summary statement, experience roles,
   education, skills tags, project responsibilities and highlights, certifications, and languages.
 
 How to Use:
@@ -58,9 +58,10 @@ Where It Is Used:
     </div>
     {% if job.location %}<p class="entry-location">{{ job.location }}</p>{% endif %}
     {% if job.description %}<p>{{ job.description }}</p>{% endif %}
-    {% if job.achievements %}
+    {% if job.roles %}
+    <p class="entry-muted"><em>Roles:</em></p>
     <ul>
-      {% for item in job.achievements %}<li>{{ item }}</li>{% endfor %}
+      {% for item in job.roles %}<li>{{ item }}</li>{% endfor %}
     </ul>
     {% endif %}
   </div>

@@ -33,7 +33,7 @@ Each section has a known shape:
 - `name`, `title`, `email`, `phone`, `location`, `linkedin`, `summary`
 
 ### experience
-- list of objects with `company`, `role`, `location`, `start`, `end`, `achievements`
+- list of objects with `company`, `role`, `location`, `start`, `end`, `roles`
 
 ### education
 - list of objects with `institution`, `degree`, `field`, `location`, `start`, `end`, `gpa`, `highlights`

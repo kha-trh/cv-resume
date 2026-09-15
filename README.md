@@ -464,7 +464,7 @@ Run inside the container: `python3 scripts/build.py [--tex] [--html] [--pdf]`. W
 ## web/templates/index.html
 
 ### Description
-Primary Jinja2 HTML layout template for the resume website. Renders personal details, work experience achievements, education, technical skill tags, project responsibilities and highlights, certifications, and language proficiencies.
+Primary Jinja2 HTML layout template for the resume website. Renders personal details, work experience roles, education, technical skill tags, project responsibilities and highlights, certifications, and language proficiencies.
 
 ### How to Use
 Edit this file to modify website markup structure, semantic HTML tags, or Jinja2 template conditionals. Changes are rendered to [output/html/index.html](output/html/index.html) on the next HTML build.

@@ -32,8 +32,9 @@ experience:
     location: Ho Chi Minh City, Vietnam
     start: Feb 2023
     end: Present
-    achievements:
-      - None # TODO: Update with actual achievements
+    roles:
+      - Virtual ECU development
+      - Software-in-the-Loop (SiL) testing
 
 education:
   - institution: HCMC University of Technology and Engineering
@@ -52,6 +53,21 @@ skills:
   tools:       [Git, GitHub, Bitbucket, Jira, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, MATLAB/Simulink, CMake, Ninja]
 
 projects:
+  - name: Biotic Quadruped Robot Dog
+    area: [Robotics, embedded systems, control systems]
+    customer: [Graduate Project]
+    tech: [C, Matlab, Simulink, Python]
+    description: A short description of what this project does.
+    responsibilities:
+      - Designed and developed quadruped robot kinematics and dynamics.
+      - Developed control algorithms for the robot's movement.
+      - Developed algorithms for the robot's path planning and obstacle avoidance.
+      - Visualized the robot's movement and simulated its operation using Matlab and Simulink.
+      - Generated and configured the robot's firmware for deployment on the embedded system.
+      - Designed and developed control method for the robot's movement using PID controller and trajectory planning.
+    highlights:
+      - Most highly graded graduate project in the class with a score of 8.5/10.
+  
   - name: 6 DOF Painting Robot
     area: [Robotics, embedded systems, control systems]
     customer: [Graduate Project]
@@ -63,10 +79,12 @@ projects:
       - Visualize the robot's movement and simulate its operation using Matlab and Simulink.
       - Developed converting method from image to robot's path.
       - Developed control algorithms for the robot's movement.
+      - Designed and developed control method for the robot's movement using PID controller and trajectory planning.
       - Developed a user-friendly interface using Matlab App Designer for controlling the robot and visualizing its operation.
       - Developed a user-friendly interface using Python for converting
     highlights:
-      - TODO: Update with actual highlights
+      - First invention of 6 DOF Painting Robot.
+      - Most highly graded graduate project in the graduation committee with a score of 9.3/10.
     
   - name: Automated HIL Testing Framework
     area: [Tool development, CI/CT, embedded systems]
@@ -78,10 +96,20 @@ projects:
     highlights:
       - TODO: Update with actual highlights
 
-  - name: Virtual ECU for AUTOSAR Classic standard
+  - name: Virtual ECU Development and Testing Platform
     area: [Virtualization platform, embedded systems]
     customer: [Honda, Iveco, Suzuki, UAES (China Virtualization Platform)]
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
+    description: A short description of what this project does.
+    responsibilities:
+      - TODO: Update with actual responsibilities
+    highlights:
+      - TODO: Update with actual highlights
+
+  - name: Software-in-the-Loop (SiL) Testing
+    area: [Virtualization platform, embedded systems]
+    customer: [Honda]
+    tech: [C, Python, Matlab, Simulink, ETAS COSYM, ETAS vECU-Builder, CMake, Jenkins, GitHub Actions]
     description: A short description of what this project does.
     responsibilities:
       - TODO: Update with actual responsibilities
