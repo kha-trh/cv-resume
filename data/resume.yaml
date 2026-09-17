@@ -24,17 +24,19 @@ personal:
   phone: "(+84) 785 682 994"
   location: Ho Chi Minh City, Vietnam
   summary: >
-    Automotive Embedded Software Engineer with 3+ years of experience in Virtual ECU development, Software-in-the-Loop (SiL) testing, embedded software validation, and test automation within the automotive domain. Specialized in designing and implementing virtualization platforms for AUTOSAR Classic and non-AUTOSAR applications using ETAS and Vector toolchains. Proven track record of delivering reusable Virtual ECU solutions, CI/CT pipelines, and automated testing frameworks for global automotive projects including Honda, Iveco, Suzuki, and UAES. Strong expertise in C, Python, MATLAB/Simulink, software architecture, and model-based development, with experience collaborating directly with international customers and global engineering teams.
+    Embedded Software Engineer with 3+ years of experience delivering Virtual ECU (vECU) platforms, Software-in-the-Loop (SiL) validation, and test automation solutions for automotive systems. Skilled in AUTOSAR Classic, model-based development, CI/CD, and virtualization technologies using ETAS and Vector toolchains. Proven track record of designing reusable engineering platforms, improving validation efficiency, and supporting global automotive programs for Honda, Iveco, Suzuki, and UAES.
 
 experience:
   - company: Bosch Global Software Technologies Company Limited (BGSV)
     role: Embedded Software Engineer
-    location: Ho Chi Minh City, Vietnam
     start: Feb 2023
     end: Present
-    roles:
-      - Virtual ECU development
-      - Software-in-the-Loop (SiL) testing
+    achievements:
+      - Developed and deployed Virtual ECU platforms supporting AUTOSAR Classic and non-AUTOSAR applications across multiple automotive programs.
+      - Designed CI/CT pipelines and automated validation frameworks that reduced manual testing effort by over 80%.
+      - Led virtualization architecture activities for Honda and other global customer projects.
+      - Contributed to ASPICE-compliant Integration and Qualification Testing activities.
+      - Collaborated with international engineering teams and customers across Japan, Europe, and China.
 
 education:
   - institution: HCMC University of Technology and Engineering
@@ -43,99 +45,51 @@ education:
     location: Ho Chi Minh City, Vietnam
     start: 2019
     end: 2023
-    gpa: 3.0
 
 skills:
-  languages:   [C, CAPL Script, Python, Matlab, Simulink, TypeScript, Shell Scripting, Bash Scripting]
-  frameworks:  [Docker, WSL, GitHub Actions, Jenkins]
-  standards:   [AUTOSAR Classic, FMI, Car Connectivity Consortium (CCC), ISO 26262, ISO 14229]
-  workflows:   [Agile, Scrum, Waterfall, V-Model]
-  tools:       [Git, GitHub, Bitbucket, Jira, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, MATLAB/Simulink, CMake, Ninja]
+  programming: [C, CAPL Script, Python, Matlab]
+  automotive: [AUTOSAR Classic, FMI, Virtual ECU (vECU), ISO 26262, UDS (ISO 14229), Software-in-the-Loop (SiL), Car Connectivity Consortium (CCC)]
+  tools: [Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, MATLAB/Simulink, Git, Jira]
+  devops: [CMake, Ninja, Jenkins, GitHub Actions, Docker]
+  collaboration: [Agile, Scrum, V-Model]
+
+languages:
+  - language: English
+    proficiency: Professional Working Proficiency
+  - language: Vietnamese
+    proficiency: Native
 
 projects:
-  - name: Biotic Quadruped Robot Dog
-    area: [Robotics, embedded systems, control systems]
-    customer: [Graduate Project]
-    tech: [C, Matlab, Simulink, Python]
-    description: 4-Month project focusing on developing a biomimetic quadruped robot capable of autonomous locomotion using kinematic modeling, dynamic analysis, trajectory planning, and PID-based motion control.
-    responsibilities:
-      - Designed and developed quadruped robot forward and inverse kinematics for quadruped locomotion.
-      - Developed control algorithms for the robot's movement.
-      - Developed algorithms for the robot's path planning and obstacle avoidance.
-      - Visualized the robot's movement and simulated its operation using Matlab and Simulink.
-      - Generated and configured the robot's firmware for deployment on the embedded system.
-      - Designed and developed control method for the robot's movement using PID controller and trajectory planning.
-    highlights:
-      - Most highly graded graduate project in the class with a score of 8.5/10.
-  
-  - name: 6 DOF Painting Robot
-    area: [Robotics, embedded systems, control systems]
-    customer: [Graduate Project]
-    tech: [C, Matlab, Simulink, Matlab App Designer, Python]
-    description: 6-Month graduate project focusing on developing a 6-DOF robotic painting system capable of converting image data into robotic motion trajectories for automated drawing and painting applications.
-    responsibilities:
-      - Designed and developed 6 DOF robot forward and inverse kinematics.
-      - Developed image processing algorithm using Matlab.
-      - Visualized the robot's movement and simulated its operation using Matlab and Simulink.
-      - Developed converting method from image to robot's path.
-      - Developed control algorithms for the robot's movement.
-      - Designed and developed control method for the robot's movement using PID controller and trajectory planning.
-      - Developed a user-friendly interface using Matlab App Designer for controlling the robot and visualizing its operation.
-      - Developed a user-friendly interface using Python for converting image data into robotic motion trajectories.
-    highlights:
-      - First invention of 6 DOF Painting Robot.
-      - Most highly graded graduate project in the graduation committee with a score of 9.3/10.
-    
-  - name: Automated HIL Testing Framework
-    area: [Tool development, CI/CT, embedded systems]
-    customer: [Bosch Fleet Management System]
-    tech: [C, CAPL Script, Python, Vector CANoe, Jenkins]
-    description: Developed an end-to-end Hardware-in-the-Loop (HIL) test automation framework enabling continuous integration, automated test execution, and reporting across embedded, mobile application, and web validation environments.
-    responsibilities:
-      - Developed automation tools for HIL testing.
-      - Designed and implemented automated pipeline from flashing, test execution in CANoe to Phone controlled test and website automation testing.
-      - Maintained Jenkins pipelines for continuous integration and continuous testing with nightly and weekly test execution.
-      - Developed and maintained test scripts for HIL testing using CAPL Script and Python.
-    highlights:
-      - Increased test coverage and reduced manual testing effort by more than 80% through automation.
-      - Reduced test execution time approximately by 50% by implementing parallel test execution and optimizing test scripts.
-
   - name: Virtual ECU Development and Testing Platform
     area: [Virtualization platform, embedded systems]
     customer: [Honda, Iveco, Suzuki, UAES (China Virtualization Platform)]
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
     description: Designed and developed a scalable Virtual ECU (vECU) platform supporting AUTOSAR Classic and non-AUTOSAR software components across multiple virtualization toolchains. The platform enables model verification, software integration, continuous testing, and rapid validation for automotive ECU development.
     responsibilities:
-      - Designed concept and software architecture for Virtual ECU platform to adapt AUTOSAR Classic and non-AUTOSAR software components.
-      - Designed and developed method for handling single core and multi-core Virtual ECU.
-      - Implemented Virtual ECU platform to adapt AUTOSAR Classic and non-AUTOSAR software components.
-      - Designed and developed Virtual ECU platform to adapt with multiple toolchains including ETAS COSYM, ETAS vECU-Builder, and Vector Virtual Target.
-      - Implemented virtual communication method for multiple Virtual ECUs (Virtual ECU type 1 and type 2).
-      - Designed and implemented Virtual ECU build process and automation pipeline using CMake and Ninja.
-      - Implemented testing framework for Virtual ECU.
-      - Designed and implemented cross-platform build and deployment environment for Virtual ECU using Docker.
-      - Developed Virtual ECU type 3 with CAN communication using Vector tools and ETAS tools.
-      - Designed and implemented testing method to verify Matlab/Simulink models generated code on Virtual ECU platform.
+      - Designed and implemented a reusable Virtual ECU platform supporting AUTOSAR Classic and non-AUTOSAR applications.
+      - Developed scalable virtualization solutions for single-core and multi-core ECU architectures.
+      - Integrated Virtual ECU platforms with ETAS COSYM, ETAS vECU-Builder, and Vector Virtual Target toolchains.
+      - Established automated build and deployment workflows using CMake, Ninja, Docker, and Jenkins.
+      - Developed testing frameworks and validation methods for model-generated code and software integration verification.
+      - Implemented virtual communication mechanisms enabling multi-vECU simulation environments.
     highlights:
-      - Developed a flexible and reusable Virtual ECU platform supporting multiple toolchains.
-      - Improved testing efficiency and reduced setup time for Virtual ECU development.
-      - First successful Virtual ECU applied for testing in Honda project in XC-CE domain.
-      - Concept and software architecture of Virtual ECU platform has been agreed and applied in multiple projects.
-      - Awarded Iveco, Suzuki and UAES (China Virtualization Platform) projects for extending scope of work for XC-CE Viet Nam team in Virtual ECU development topic.
-      - Joined global toolchain solution team to improve and standardize Virtual ECU platform for global usage in XC-CE domain.
+      - Delivered the first successful Virtual ECU deployment for Honda within the XC-CE domain.
+      - Defined a reusable virtualization architecture adopted across multiple customer projects.
+      - Expanded virtualization business opportunities, contributing to new project acquisitions for Iveco, Suzuki, and UAES.
+      - Contributed to global standardization initiatives for Virtual ECU platforms within Bosch.
 
   - name: Software-in-the-Loop (SiL) Testing
     area: [Virtualization platform, embedded systems]
     customer: [Honda]
     tech: [C, Python, Matlab, Simulink, ETAS COSYM, ETAS vECU-Builder, CMake, Jenkins, GitHub Actions]
-    description: A short description of what this project does.
+    description: Performed Software-in-the-Loop (SiL) validation for automotive control software using Virtual ECU environments. Supported integration testing, qualification testing, automated test execution, and customer validation activities throughout the software development lifecycle.
     responsibilities:
       - Reviewed and analyzed Honda project requirements for Software-in-the-Loop (SiL) testing.
       - Designed Integration testcases and Qualification testcases for Virtual ECU
       - Implemented and executed Integration and Qualification test script for Virtual ECU using Python, ETAS tools and Vector tools.
       - Designed and implemented AI-based test script generation method.
-      - Joined onsite testing in Honda headquarters in Japan for Vehicle testing and verification.
-      - Joined onsite testing in Alpsalpine headquarters in Japan for Debug testing and verification.
+      - Conducted on-site vehicle validation and testing activities at Honda headquarters in Japan.
+      - Supported debugging and verification activities at Alpsalpine headquarters in Japan for Debug testing and verification.
       - Remote contributed to Customer support and issue resolution.
     highlights:
       - ASPICE level 2 achieved for testing level SWE5 (Integration testing) and SWE6 (Qualification testing) for Honda project.
@@ -145,15 +99,17 @@ projects:
       - Applied AI-based test script generation method to reduce manual effort in test script creation.
       - Successfully resolved customer issues and provided support remotely, ensuring timely resolution of any problems encountered during testing.
       - Reduced license cost for customer by implementing Virtual ECU inhouse platform.
-
-certifications:
-  - name: None
-    issuer: None
-    date: None
-    url: None
-
-languages:
-  - language: English
-    proficiency: Native
-  - language: Vietnamese
-    proficiency: Native
+  
+  - name: Automated HIL Testing Framework
+    area: [Tool development, CI/CT, embedded systems]
+    customer: [Bosch Fleet Management System]
+    tech: [C, CAPL Script, Python, Vector CANoe, Jenkins]
+    description: Developed an end-to-end HIL automation framework covering ECU flashing, CANoe-based test execution, mobile application validation, and web testing integration.
+    responsibilities:
+      - Developed automation tools for HIL testing.
+      - Designed and implemented automated pipeline from flashing, test execution in CANoe to Phone controlled test and website automation testing.
+      - Designed and maintained Jenkins pipelines for continuous integration and continuous testing with nightly and weekly test execution.
+      - Developed and maintained test scripts for HIL testing using CAPL Script and Python.
+    highlights:
+      - Reduced manual validation effort by over 80% through end-to-end test automation.
+      - Reduced regression execution time by approximately 50% through parallel execution and pipeline optimization.

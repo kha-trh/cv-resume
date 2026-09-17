@@ -60,10 +60,10 @@ Where It Is Used:
     </div>
     {% if job.location %}<p class="entry-location">{{ job.location }}</p>{% endif %}
     {% if job.description %}<p>{{ job.description }}</p>{% endif %}
-    {% if job.roles %}
+    {% if job.roles or job.achievements %}
     <p class="entry-muted"><em>Roles:</em></p>
     <ul>
-      {% for item in job.roles %}<li>{{ item }}</li>{% endfor %}
+      {% for item in job.roles or job.achievements %}<li>{{ item }}</li>{% endfor %}
     </ul>
     {% endif %}
   </div>
@@ -114,6 +114,38 @@ Where It Is Used:
 </section>
 {% endif %}
 
+{% if (not active_sections or 'certifications' in active_sections) and certifications %}
+<section>
+  <h2>Certifications</h2>
+  {% for cert in certifications %}
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">
+        {% if cert.url %}<a href="{{ cert.url }}" target="_blank">{{ cert.name }}</a>
+        {% else %}{{ cert.name }}{% endif %}
+      </span>
+      <span class="entry-org">{{ cert.issuer }}</span>
+      <span class="entry-dates">{{ cert.date }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if (not active_sections or 'languages' in active_sections) and languages %}
+<section>
+  <h2>Languages</h2>
+  <div class="skills-grid">
+    {% for lang in languages %}
+    <div class="skill-row">
+      <span class="skill-category">{{ lang.language }}:</span>
+      <span>{{ lang.proficiency }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 {% if (not active_sections or 'projects' in active_sections) and projects %}
 <section>
   <h2>Projects</h2>
@@ -152,38 +184,6 @@ Where It Is Used:
     {% endif %}
   </div>
   {% endfor %}
-</section>
-{% endif %}
-
-{% if (not active_sections or 'certifications' in active_sections) and certifications %}
-<section>
-  <h2>Certifications</h2>
-  {% for cert in certifications %}
-  <div class="entry">
-    <div class="entry-header">
-      <span class="entry-title">
-        {% if cert.url %}<a href="{{ cert.url }}" target="_blank">{{ cert.name }}</a>
-        {% else %}{{ cert.name }}{% endif %}
-      </span>
-      <span class="entry-org">{{ cert.issuer }}</span>
-      <span class="entry-dates">{{ cert.date }}</span>
-    </div>
-  </div>
-  {% endfor %}
-</section>
-{% endif %}
-
-{% if (not active_sections or 'languages' in active_sections) and languages %}
-<section>
-  <h2>Languages</h2>
-  <div class="skills-grid">
-    {% for lang in languages %}
-    <div class="skill-row">
-      <span class="skill-category">{{ lang.language }}:</span>
-      <span>{{ lang.proficiency }}</span>
-    </div>
-    {% endfor %}
-  </div>
 </section>
 {% endif %}
 

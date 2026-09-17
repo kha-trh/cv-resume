@@ -39,6 +39,10 @@ def main():
     with open(yaml_path, encoding='utf-8') as f:
         data = yaml.safe_load(f) or {}
 
+    experience = data.get('experience', [])
+    if isinstance(experience, dict):
+        data['experience'] = experience.get('experience', [])
+
     active_sections = None
     if os.path.exists(config_path):
         with open(config_path, encoding='utf-8') as f:

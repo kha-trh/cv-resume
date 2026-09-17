@@ -22,6 +22,6 @@ sections:
   - experience
   - education
   - skills
-  - projects
-  # - certifications # TODO: Uncomment to include certifications section in build output
   - languages
+  # - certifications # TODO: Uncomment to include certifications section in build output
+  - projects

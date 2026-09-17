@@ -86,6 +86,8 @@ def gen_header(data):
 
 def gen_experience(data):
     jobs = data.get('experience', [])
+    if isinstance(jobs, dict):
+        jobs = jobs.get('experience', [])
     if not jobs:
         return ''
     lines = [r'\section{Experience}']
@@ -97,8 +99,10 @@ def gen_experience(data):
         end      = esc(job.get('end', ''))
         dates    = f'{start} -- {end}' if start or end else ''
         desc     = esc(job.get('description', ''))
-        bullets  = job.get('roles', [])
-        bullet_tex = r'\item \textit{Roles:}' + '\n' + r'  \begin{itemize}' + '\n' + '\n'.join(r'    \item ' + esc(b) for b in bullets) + '\n' + r'  \end{itemize}'
+        bullets  = job.get('achievements') or []
+        bullet_tex = ''
+        if bullets:
+            bullet_tex = r'\item \textit{Achievements:}' + '\n' + r'  \begin{itemize}' + '\n' + '\n'.join(r'    \item ' + esc(b) for b in bullets) + '\n' + r'  \end{itemize}'
         lines.append(r'\resumeentry{' + title + r'}{' + company + r'}{' +
                      location + r'}{' + dates + r'}{' + desc + r'}{' + bullet_tex + r'}')
     return '\n'.join(lines)
