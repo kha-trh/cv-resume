@@ -49,22 +49,14 @@ education:
 skills:
   programming: [C, CAPL Script, Python, Matlab]
   automotive: [AUTOSAR Classic, FMI, Virtual ECU (vECU), ISO 26262, UDS (ISO 14229), Software-in-the-Loop (SiL), Car Connectivity Consortium (CCC)]
-  tools: [Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, MATLAB/Simulink, Git, Jira]
+  tools: [Vector CANoe, Vector DaVinci Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, MATLAB/Simulink, Git, Jira]
   devops: [CMake, Ninja, Jenkins, GitHub Actions, Docker]
   collaboration: [Agile, Scrum, V-Model]
 
-languages:
-  - language: English
-    proficiency: Professional Working Proficiency
-  - language: Vietnamese
-    proficiency: Native
-
 projects:
   - name: Virtual ECU Development and Testing Platform
-    area: [Virtualization platform, embedded systems]
     customer: [Honda, Iveco, Suzuki, UAES (China Virtualization Platform)]
-    tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector Danvici Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
-    description: Designed and developed a scalable Virtual ECU (vECU) platform supporting AUTOSAR Classic and non-AUTOSAR software components across multiple virtualization toolchains. The platform enables model verification, software integration, continuous testing, and rapid validation for automotive ECU development.
+    tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector DaVinci Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
     responsibilities:
       - Designed and implemented a reusable Virtual ECU platform supporting AUTOSAR Classic and non-AUTOSAR applications.
       - Developed scalable virtualization solutions for single-core and multi-core ECU architectures.
@@ -72,17 +64,16 @@ projects:
       - Established automated build and deployment workflows using CMake, Ninja, Docker, and Jenkins.
       - Developed testing frameworks and validation methods for model-generated code and software integration verification.
       - Implemented virtual communication mechanisms enabling multi-vECU simulation environments.
+      - Designed and implemented simulation testing frameworks to verify MATLAB/Simulink models generated code on Virtual ECU.
     highlights:
       - Delivered the first successful Virtual ECU deployment for Honda within the XC-CE domain.
       - Defined a reusable virtualization architecture adopted across multiple customer projects.
-      - Expanded virtualization business opportunities, contributing to new project acquisitions for Iveco, Suzuki, and UAES.
+      - Supported technical demonstrations and virtualization activities that contributed to expansion of vECU initiatives across Iveco, Suzuki, and UAES programs.
       - Contributed to global standardization initiatives for Virtual ECU platforms within Bosch.
 
   - name: Software-in-the-Loop (SiL) Testing
-    area: [Virtualization platform, embedded systems]
     customer: [Honda]
     tech: [C, Python, Matlab, Simulink, ETAS COSYM, ETAS vECU-Builder, CMake, Jenkins, GitHub Actions]
-    description: Performed Software-in-the-Loop (SiL) validation for automotive control software using Virtual ECU environments. Supported integration testing, qualification testing, automated test execution, and customer validation activities throughout the software development lifecycle.
     responsibilities:
       - Reviewed and analyzed Honda project requirements for Software-in-the-Loop (SiL) testing.
       - Designed Integration testcases and Qualification testcases for Virtual ECU
@@ -90,23 +81,19 @@ projects:
       - Designed and implemented AI-based test script generation method.
       - Conducted on-site vehicle validation and testing activities at Honda headquarters in Japan.
       - Supported debugging and verification activities at Alpsalpine headquarters in Japan for Debug testing and verification.
-      - Remote contributed to Customer support and issue resolution.
+      - Provided remote technical support and issue resolution for customer validation activities.
     highlights:
       - ASPICE level 2 achieved for testing level SWE5 (Integration testing) and SWE6 (Qualification testing) for Honda project.
-      - Successfully completed onsite testing in Honda headquarters in Japan for Vehicle testing and verification.
-      - Successfully completed onsite testing in Alpsalpine headquarters in Japan for Debug testing and verification.
-      - Reduced test execution time approximately by more than 70% by implementing test execution automation and test scripts generation.
+      - Reduced test execution time by more than 70% by implementing test execution automation and test scripts generation.
       - Applied AI-based test script generation method to reduce manual effort in test script creation.
       - Successfully resolved customer issues and provided support remotely, ensuring timely resolution of any problems encountered during testing.
       - Reduced license cost for customer by implementing Virtual ECU inhouse platform.
   
   - name: Automated HIL Testing Framework
-    area: [Tool development, CI/CT, embedded systems]
     customer: [Bosch Fleet Management System]
     tech: [C, CAPL Script, Python, Vector CANoe, Jenkins]
-    description: Developed an end-to-end HIL automation framework covering ECU flashing, CANoe-based test execution, mobile application validation, and web testing integration.
     responsibilities:
-      - Developed automation tools for HIL testing.
+      - Developed an end-to-end HIL automation framework integrating ECU flashing, CANoe test execution, mobile application control, and web validation.
       - Designed and implemented automated pipeline from flashing, test execution in CANoe to Phone controlled test and website automation testing.
       - Designed and maintained Jenkins pipelines for continuous integration and continuous testing with nightly and weekly test execution.
       - Developed and maintained test scripts for HIL testing using CAPL Script and Python.

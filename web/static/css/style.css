@@ -24,20 +24,21 @@ Where It Is Used:
   --border:     #E5E7EB;
   --tag-bg:     #EFF6FF;
   --tag-color:  #1D4ED8;
-  --font-sans:  system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Times New Roman', Times, serif;
+  --font-size-base: 13.33px;
   --max-width:  860px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
-  font-family: var(--font-sans);
-  font-size: 15px;
-  line-height: 1.6;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
+  line-height: 1.35;
   color: var(--dark);
   background: var(--bg);
   max-width: var(--max-width);
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0 1.5rem;
 }
 
@@ -47,25 +48,25 @@ a:hover { text-decoration: underline; }
 /* ── Header ──────────────────────────────────────────────────────────────────── */
 .resume-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .resume-header h1 {
-  font-size: 2.2rem;
+  font-size: 29.33px;
   font-weight: 700;
   margin: 0 0 4px;
   color: var(--dark);
 }
 
 .resume-header .title {
-  font-size: 1.1rem;
+  font-size: 16px;
   color: var(--muted);
   margin: 0 0 6px;
 }
 
 .resume-header .contact,
 .resume-header .links {
-  font-size: 0.9rem;
+  font-size: 12px;
   color: var(--muted);
   margin: 2px 0;
 }
@@ -76,30 +77,29 @@ a:hover { text-decoration: underline; }
 
 .resume-header .summary {
   max-width: 640px;
-  margin: 12px auto 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 12px;
 }
 
 /* ── Sections ─────────────────────────────────────────────────────────────────── */
 section {
-  margin-bottom: 1.8rem;
+  margin-bottom: 0.75rem;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 14.67px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--dark);
   border-bottom: 2px solid var(--accent);
   padding-bottom: 3px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.35rem;
 }
 
 /* ── Entry ───────────────────────────────────────────────────────────────────── */
 .entry {
-  margin-bottom: 1rem;
+  margin-bottom: 0.45rem;
 }
 
 .entry-header {
@@ -111,40 +111,40 @@ h2 {
 
 .entry-title {
   font-weight: 600;
-  font-size: 0.97rem;
+  font-size: 13.33px;
 }
 
 .entry-muted {
   color: var(--muted);
-  font-size: 0.87rem;
+  font-size: 11.33px;
 }
 
 .entry-org {
   font-weight: 600;
-  font-size: 0.97rem;
+  font-size: 13.33px;
 }
 
 .entry-dates {
   margin-left: auto;
   color: var(--muted);
-  font-size: 0.87rem;
+  font-size: 11.33px;
   white-space: nowrap;
 }
 
 .entry-location {
   color: var(--muted);
-  font-size: 0.87rem;
+  font-size: 11.33px;
   margin: 0;
 }
 
 ul {
-  margin: 4px 0 0 1.2rem;
+  margin: 2px 0 0 1.2rem;
   padding: 0;
 }
 
 li {
-  margin-bottom: 2px;
-  font-size: 0.93rem;
+  margin-bottom: 1px;
+  font-size: 12px;
 }
 
 /* ── Skills ──────────────────────────────────────────────────────────────────── */

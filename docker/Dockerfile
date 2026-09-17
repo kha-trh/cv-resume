@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       texlive-xetex \
       texlive-latex-extra \
       texlive-fonts-recommended \
+      fonts-texgyre \
       fonts-lmodern \
       latexmk \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
