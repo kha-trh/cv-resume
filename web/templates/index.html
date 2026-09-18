@@ -127,6 +127,7 @@ Where It Is Used:
       <span class="entry-org">{{ cert.issuer }}</span>
       <span class="entry-dates">{{ cert.date }}</span>
     </div>
+    {% if cert.url %}<p class="entry-muted">URL: <a href="{{ cert.url }}" target="_blank">{{ cert.url }}</a></p>{% endif %}
   </div>
   {% endfor %}
 </section>
@@ -169,6 +170,9 @@ Where It Is Used:
     <p class="tech-stack">
       {% for t in proj.tech %}<span class="tag">{{ t }}</span>{% endfor %}
     </p>
+    {% endif %}
+    {% if proj.url %}
+    <p class="entry-muted">URL: <a href="{{ proj.url }}" target="_blank">{{ proj.url }}</a></p>
     {% endif %}
     {% if proj.responsibilities %}
     <p class="entry-muted"><em>Responsibilities:</em></p>

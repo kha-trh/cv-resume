@@ -103,16 +103,16 @@ projects:
   
   - name: 6 DOF Painting Robot
     customer: [Personal project]
-    tech: [Matlab, Simulink, Python, C]
+    tech: [Matlab, Simulink, Python]
     url: https://github.com/kha-trh/6DOF_PaintingRobot
     responsibilities:
-      - Fully development and implementation of a 6 DOF painting robot using Matlab, Simulink, Python, and C.
+      - Fully development and implementation of a 6 DOF painting robot using Matlab, Simulink, and Python.
       - Virtual simulation and testing of the painting robot using Matlab and Simulink.
 
   - name: Biotic Quadruped Robot
     customer: [Personal project]
-    tech: [Matlab, Simulink, Python, C]
+    tech: [Matlab, Simulink, Python]
     url: https://github.com/kha-trh/QuadrupedRobot.git
     responsibilities:
-      - Fully development and implementation of a quadruped robot using Matlab, Simulink, Python, and C.
+      - Fully development and implementation of a quadruped robot using Matlab, Simulink, and Python.
       - Virtual simulation and testing of the quadruped robot using Matlab and Simulink.

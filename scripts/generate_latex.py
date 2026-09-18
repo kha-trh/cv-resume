@@ -176,6 +176,8 @@ def gen_projects(data):
             meta.append(f'Customer: {customer_str}')
         if tech:
             meta.append(f'Technologies: {tech_str}')
+        if url:
+            meta.append(r'URL: \url{' + url + r'}')
         if desc:
             meta.append(f'Description: {desc}')
         combined = r' \\ '.join(meta)
@@ -208,7 +210,8 @@ def gen_certifications(data):
             name = r'\href{' + url + r'}{' + name + r'}'
         issuer = esc(cert.get('issuer', ''))
         date   = esc(str(cert.get('date', '')))
-        lines.append(r'\resumeentry{' + name + r'}{' + issuer + r'}{}{' + date + r'}{}{}')
+        url_text = r'URL: \url{' + url + r'}' if url else ''
+        lines.append(r'\resumeentry{' + name + r'}{' + issuer + r'}{}{' + date + r'}{' + url_text + r'}{}')
     return '\n'.join(lines)
 
 
