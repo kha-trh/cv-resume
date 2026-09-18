@@ -55,7 +55,7 @@ skills:
 
 projects:
   - name: Virtual ECU Development and Testing Platform
-    customer: [Honda, Iveco, Suzuki, UAES (China Virtualization Platform)]
+    customer: [Honda Perfectly Keyless, Iveco Body Domain Control, Zone ECU Suzuki, UAES (China Virtualization Platform)]
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector DaVinci Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
     responsibilities:
       - Designed and implemented a reusable Virtual ECU platform supporting AUTOSAR Classic and non-AUTOSAR applications.
@@ -72,7 +72,7 @@ projects:
       - Contributed to global standardization initiatives for Virtual ECU platforms within Bosch.
 
   - name: Software-in-the-Loop (SiL) Testing
-    customer: [Honda]
+    customer: [Honda Perfectly Keyless]
     tech: [C, Python, Matlab, Simulink, ETAS COSYM, ETAS vECU-Builder, CMake, Jenkins, GitHub Actions]
     responsibilities:
       - Reviewed and analyzed Honda project requirements for Software-in-the-Loop (SiL) testing.
