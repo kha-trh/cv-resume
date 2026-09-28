@@ -21,7 +21,7 @@ personal:
   name: Tran Hoang Kha
   title: Embedded Software Engineer
   email: khath.hcmc@gmail.com
-  phone: "(+84) 785 682 994"
+  phone: "0785682994"
   location: Ho Chi Minh City, Vietnam
   summary: >
     Embedded Software Engineer with 3+ years of experience delivering Virtual ECU (vECU) platforms, Software-in-the-Loop (SiL) validation, and test automation solutions for automotive systems. Skilled in AUTOSAR Classic, model-based development, CI/CD, and virtualization technologies using ETAS and Vector toolchains. Proven track record of designing reusable engineering platforms, improving validation efficiency, and supporting global automotive programs for Honda, Iveco, Suzuki, and UAES.
@@ -54,7 +54,7 @@ skills:
   collaboration: [Agile, Scrum, V-Model]
 
 projects:
-  - name: Virtual ECU Development and Testing Platform
+  - name: Virtual ECU Platform and Testing Framework Development
     customer: [Honda Perfectly Keyless, Iveco Body Domain Control, Zone ECU Suzuki, UAES (China Virtualization Platform)]
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector DaVinci Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
     responsibilities:
@@ -62,9 +62,9 @@ projects:
       - Developed scalable virtualization solutions for single-core and multi-core ECU architectures.
       - Integrated Virtual ECU platforms with ETAS COSYM, ETAS vECU-Builder, and Vector Virtual Target toolchains.
       - Established automated build and deployment workflows using CMake, Ninja, Docker, and Jenkins.
-      - Developed testing frameworks and validation methods for model-generated code and software integration verification.
-      - Implemented virtual communication mechanisms enabling multi-vECU simulation environments.
-      - Designed and implemented simulation testing frameworks to verify MATLAB/Simulink models generated code on Virtual ECU.
+      - Designed and implemented testing frameworks and validation methodologies for model-generated code and software integration verification.
+      - Implemented virtual communication mechanisms to enable distributed multi-vECU simulation environments.
+      - Designed and implemented simulation-based testing frameworks to validate MATLAB/Simulink generated code on Virtual ECU platforms.
     highlights:
       - Delivered the first successful Virtual ECU deployment for Honda within the XC-CE domain.
       - Defined a reusable virtualization architecture adopted across multiple customer projects.
@@ -76,30 +76,38 @@ projects:
     tech: [C, Python, Matlab, Simulink, ETAS COSYM, ETAS vECU-Builder, CMake, Jenkins, GitHub Actions]
     responsibilities:
       - Reviewed and analyzed Honda project requirements for Software-in-the-Loop (SiL) testing.
-      - Designed Integration testcases and Qualification testcases for Virtual ECU
-      - Implemented and executed Integration and Qualification test script for Virtual ECU using Python, ETAS tools and Vector tools.
-      - Designed and implemented AI-based test script generation method.
+      - Designed and developed Integration Test Cases and Qualification Test Cases for Virtual ECU validation.
+      - Developed and executed automated Integration and Qualification test scripts using Python, ETAS, and Vector toolchains.
+      - Designed and implemented an AI-assisted test script generation framework to accelerate test development.
       - Conducted on-site vehicle validation and testing activities at Honda headquarters in Japan.
-      - Supported debugging and verification activities at Alpsalpine headquarters in Japan for Debug testing and verification.
+      - Supported on-site debugging and verification activities at Alps Alpine headquarters in Japan.
       - Provided remote technical support and issue resolution for customer validation activities.
     highlights:
       - ASPICE level 2 achieved for testing level SWE5 (Integration testing) and SWE6 (Qualification testing) for Honda project.
       - Reduced test execution time by more than 70% by implementing test execution automation and test scripts generation.
-      - Applied AI-based test script generation method to reduce manual effort in test script creation.
-      - Successfully resolved customer issues and provided support remotely, ensuring timely resolution of any problems encountered during testing.
+      - Reduced manual test development effort through AI-assisted test script generation.
+      - Provided timely remote support and issue resolution, ensuring successful customer validation activities.
       - Reduced license cost for customer by implementing Virtual ECU inhouse platform.
   
-  - name: Automated HIL Testing Framework
-    customer: [Bosch Fleet Management System]
-    tech: [C, CAPL Script, Python, Vector CANoe, Jenkins]
+  - name: MICROSAR BSW and Virtual BSW Development for AUTOSAR Classic Virtual ECU Adaptation
+    customer: [Honda Perfectly Keyless, Iveco Body Domain Control, Honda UWB Sensor ECU]
+    tech: [C, Jenkins, Vector CANoe, Vector DaVinci Configurator, Vector Virtual Target, Python]
     responsibilities:
-      - Developed an end-to-end HIL automation framework integrating ECU flashing, CANoe test execution, mobile application control, and web validation.
-      - Designed and implemented automated pipeline from flashing, test execution in CANoe to Phone controlled test and website automation testing.
-      - Designed and maintained Jenkins pipelines for continuous integration and continuous testing with nightly and weekly test execution.
-      - Developed and maintained test scripts for HIL testing using CAPL Script and Python.
+      - Configured and integrated Virtual BSW modules for AUTOSAR Classic-based Virtual Target environments.
+      - Developed and adapted AUTOSAR communication stack components for Virtual Target execution.
+      - Implemented memory management services to support Virtual ECU functionality and performance.
+      - Developed and integrated AUTOSAR diagnostic modules for Virtual Target validation and testing.
+      - Enabled MICROSAR OS and multicore execution support for Virtual Target platforms.
+      - Designed and implemented Crypto Wrapper and key management services to support security and cryptographic operations.
+      - Enabled and validated AUTOSAR Classic startup and initialization sequences in Virtual Target environments.
+      - Designed and developed build infrastructure to support Virtual Target adaptation and deployment on Real ECU hardware.
+      - Integrated and maintained CI/CT pipelines, improving build automation and continuous validation processes.
+      - Configured and validated debugging capabilities for seamless troubleshooting across Virtual and Real ECU platforms.
     highlights:
-      - Reduced manual validation effort by over 80% through end-to-end test automation.
-      - Reduced regression execution time by approximately 50% through parallel execution and pipeline optimization.
+      - Accelerated project development and integration cycles by enabling Virtual Target execution on Real ECU hardware.
+      - Reduced dependency on physical hardware for software development, integration, and testing activities.
+      - Improved development efficiency through automated build and validation pipelines.
+      - Enhanced software quality and debugging efficiency by enabling Virtual ECU validation prior to hardware availability.
   
   - name: 6 DOF Painting Robot
     customer: [Personal project]

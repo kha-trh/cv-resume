@@ -63,9 +63,6 @@ def gen_header(data):
     github   = p.get('github', '')
     summary  = esc(p.get('summary', ''))
 
-    contact1_parts = [x for x in [email, phone, loc] if x]
-    contact1 = r' \textbar\ '.join(contact1_parts)
-
     links = []
     if website:
         links.append(r'\href{' + website + r'}{' + esc(website.replace('https://', '').replace('http://', '')) + r'}')
@@ -73,9 +70,13 @@ def gen_header(data):
         links.append(r'\href{https://' + linkedin.lstrip('https://') + r'}{LinkedIn}')
     if github:
         links.append(r'\href{https://' + github.lstrip('https://') + r'}{GitHub}')
-    contact2 = r' \textbar\ '.join(links)
+    contact4 = r' \textbar\ '.join(links)
 
-    lines = [r'\resumeheader{' + name + r'}{' + title + r'}{' + contact1 + r'}{' + contact2 + r'}']
+    contact1 = (r'Phone: ' + phone) if phone else ''
+    contact2 = (r'Email: ' + email) if email else ''
+    contact3 = (r'Address: ' + loc) if loc else ''
+
+    lines = [r'\resumeheader{' + name + r'}{' + title + r'}{' + contact1 + r'}{' + contact2 + r'}{' + contact3 + r'}{' + contact4 + r'}']
 
     if summary:
         lines.append('')

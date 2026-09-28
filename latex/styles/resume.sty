@@ -85,15 +85,17 @@
 
 % ── Helper macros ──────────────────────────────────────────────────────────────
 
-% \resumeheader{name}{title}{contact line 1}{contact line 2}
-\newcommand{\resumeheader}[4]{%
+% \resumeheader{name}{title}{contact line 1}{contact line 2}{contact line 3}{contact line 4}
+\newcommand{\resumeheader}[6]{%
   \begin{center}
     {\fontsize{22pt}{25pt}\selectfont\bfseries #1}\\[3pt]
     {\fontsize{12pt}{14pt}\selectfont\color{muted} #2}\\[3pt]
     {\fontsize{9pt}{11pt}\selectfont #3}\\[1pt]
-    {\fontsize{9pt}{11pt}\selectfont #4}
-  \end{center}
+    {\fontsize{9pt}{11pt}\selectfont #4}\\[1pt]
+    {\fontsize{9pt}{11pt}\selectfont #5}\\[1pt]
+    {\fontsize{9pt}{11pt}\selectfont #6}
   \vspace{2pt}
+  \end{center}
 }
 
 % \resumeentry{title}{org/company}{location}{dates}{description}{bullets}
