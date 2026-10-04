@@ -59,6 +59,7 @@ projects:
     tech: [C, Python, Matlab, Simulink, Vector CANoe, Vector DaVinci Configurator, Vector Virtual Target, ETAS COSYM, ETAS vECU-Builder, CMake, Ninja, Jenkins, GitHub Actions]
     responsibilities:
       - Designed and implemented a reusable Virtual ECU platform supporting AUTOSAR Classic and non-AUTOSAR applications.
+      - Debugged and implemented wrapper/helper functions to enable/integrate Communication stack, NvM stack, Crypto/Csm stack, and MICROSAR OS (Single Core and Multi-Core) behavior follow to AUTOSAR Classic architecture.
       - Developed scalable virtualization solutions for single-core and multi-core ECU architectures.
       - Integrated Virtual ECU platforms with ETAS COSYM, ETAS vECU-Builder, and Vector Virtual Target toolchains.
       - Established automated build and deployment workflows using CMake, Ninja, Docker, and Jenkins.
